@@ -1,0 +1,18 @@
+products
+
+
+//api endpoint -> GET
+http://localhost:4000/v1/products
+
+//api endpoint -> POST
+http://localhost:4000/v1/product/post
+
+//api endpoint -> PUT
+http://localhost:4000/v1/product/post/:id
+
+//api endpoint -> DELETE
+http://localhost:4000/v1/product/delete/:id
+
+
+//row
+id, name, image, qty, harga, rating, kategori, spesifikasi, timestamp

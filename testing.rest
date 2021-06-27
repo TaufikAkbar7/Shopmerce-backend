@@ -1,0 +1,69 @@
+GET http://localhost:4000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzU4ZDBlMDg0ZTQ4MmFlYjNiMjYiLCJuYW1lIjoidGVzNyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjIyODg5MjU5fQ.nOTOzV4xB26jIPxNVHYI0oNCPUKICwVU2D6eL5jySMQ
+
+
+###
+POST http://localhost:4000/users/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "test8",
+    "email": "customer8@gmail.com",
+    "password": "cuk123",
+    "user_type_id": 7
+}
+
+###
+PUT http://localhost:4000/users/updateUser
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzU4ZDBlMDg0ZTQ4MmFlYjNiMjYiLCJuYW1lIjoidGVzNyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjIyODg5MjM3fQ.Yv7NjY0MPVCpfu9PutiiWZeenI4FWjCMSOwsLRnzmgE
+
+{
+    "name": "tes7",
+    "email": "admin@gmail.com",
+    "password": "cuk123",
+    "userRole": 1
+}
+
+###
+POST http://localhost:4000/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "cuk123"
+}
+
+###
+GET http://localhost:4000/v1/products-seller
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzRmMjBlMDg0ZTQ4MmFlYjNiMjUiLCJuYW1lIjoidXBkYXRlbGFnaWxhZ2kiLCJlbWFpbCI6InNlbGxlckBnbWFpbC5jb20iLCJpYXQiOjE2MjM0ODE3Mjd9.zMMn0RNCmWL49Q5VzcjeuxNNFtfWPlpZc8XGYJzCOOc
+
+
+###
+GET http://localhost:4000/order/60c5b9c1f30ea438bf469b09
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzU4ZDBlMDg0ZTQ4MmFlYjNiMjYiLCJuYW1lIjoidGVzNyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjIzNTcxMjc0fQ.Z69VU3NHG2C7PXdKGbYPmlQNQxoYJNCGvzHEbkjJApA
+
+###
+GET http://localhost:4000/order/mine/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzRmMjBlMDg0ZTQ4MmFlYjNiMjUiLCJuYW1lIjoidGVzdDciLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInVzZXJfdHlwZV9pZCI6MSwiaWF0IjoxNjIyMTA4MjQ1fQ.OjQ4IdJ7UAksx7Ku7mnYWTfJta2ZPSvp5939VJ9YgaE
+
+
+###
+POST http://localhost:4000/order/midtrans/60c5b9c1f30ea438bf469b09
+Content-Type: application/json
+Accept: application/json
+Authorization: Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzU4ZDBlMDg0ZTQ4MmFlYjNiMjYiLCJuYW1lIjoidGVzNyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjIzNTcxMjc0fQ.Z69VU3NHG2C7PXdKGbYPmlQNQxoYJNCGvzHEbkjJApA
+
+
+###
+PUT http://localhost:4000/order/pay/60bf7d45d06cba2beacc9885
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzU4ZDBlMDg0ZTQ4MmFlYjNiMjYiLCJuYW1lIjoidGVzNyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjIzMTYyMzk3fQ.YNqSU4jwiikXX7kUKUpcCJtyfPNWLbXse-DKzZSerK8
+
+###
+GET http://localhost:4000/discovery/60c2301038339e1891d3dd0e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDkxNzU4ZDBlMDg0ZTQ4MmFlYjNiMjYiLCJuYW1lIjoidGVzNyIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjIzMjk1Nzk1fQ.rRyszOY0w1YaF3-8z7LUEnsvddZx2cWQsvMtszqGiVs
